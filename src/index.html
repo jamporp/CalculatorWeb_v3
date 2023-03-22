@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>cal_v3</title>
+  </head>
+  <body>
+    <form>
+      <div><input id="num_1" type="text" value="12" /></div>
+      <div><input id="num_2" type="text" value="2" /></div>
+      <button onclick="calplus()" type="button">+</button>
+      <div>
+        <span style="font-size: x-small; color: #eb1919" id="result">00</span>
+      </div>
+    </form>
+    <script>
+      function calplus() {
+        //เก็บค่า
+        var num_01 = Number(document.getElementById("num_1").value);
+        var num_02 = Number(document.getElementById("num_2").value);
+        //คำนวน
+        result_1 = num_01 + num_02;
+
+        //แสดงผล
+        document.getElementById("result").innerHTML = result_1;
+        console.log(result_1);
+      }
+    </script>
+  </body>
+</html>
